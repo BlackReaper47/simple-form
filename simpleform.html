@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>simpleform</title>
+</head>
+<body>
+<form method="get" action="/action_page.php">
+<table style="border: 1px solid; font-style:Times New Roman;margin: 50px 50px 50px 50px; width: 30%; ">
+	<tr>
+		<td style="border: 2px solid;"><label for="E-mail">E-mail</label></td>
+		<td style="border: 2px solid;"><input type="Text" id="E-mail" name="E-mail"></td>
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"><label for="Name">Name</label></td>
+		<td style="border: 2px solid;"><input type="Text" id="Name" name="Name"></td>
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"><label for="Country">Country</label></td>
+		<td style="border: 2px solid;"><select name="Country" id="Country">
+			<option>^^Select Value^^</option>
+			<option>Pakistan</option>
+			<option>England</option>
+			<option>New-Zealand</option>
+			<option>Austrailia</option>
+			<option>Germany</option>
+			<option>Russia</option>
+		</select>
+		 <label for="City">City</label> 
+		 <select name="City" id="City">
+		 	<option>^^Select Value^^</option>
+		 	<option>Islamabad</option>
+		 	<option>Birmingham</option>
+		 	<option>Wellington</option>
+		 	<option>Sydney</option>
+		 	<option>Berlin</option>
+		 	<option>Moscow</option>
+		 </select></td>
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"><label for="Answer">Answer</label></td>
+		<td style="border: 2px solid;"><input type="radio" id="Red" name="Answer" value="Red">
+  		<label style="color: red;" for="Red">Red</label>
+  		<input type="radio" id="Gray" name="Answer" value="Gray">
+  		<label style="color: gray;" for="Gray">Gray</label>
+  		<input type="radio" id="Blue" name="Answer" value="Blue">
+  		<label style="color: blue;" for="Blue">Blue</label></td>
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"><label for="Preferences">Preferences</label></td>
+		<td style="border: 2px solid;"><input type="checkbox" id="sports" name="Preferences" value="Sports">
+  		<label for="sports">Sports</label>
+  		<input type="checkbox" id="politics" name="Preferences" value="Politics">
+  		<label for="politics">Politics</label>
+  		<input type="checkbox" id="business" name="Preferences" value="Business">
+  		<label for="business">Business</label></td>
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"><label for="Websites">Websites</label></td>
+		<td style="border: 2px solid;"> 
+			<select style="height: 90px;" name="Websites" id="Websites" multiple>
+				<option style="color: orange;">digg</option>
+				<option style="color: darkblue;">facebook</option>
+				<option style="color: red;">google</option>
+				<option style="color: gray;">orkut</option>
+				<option style="color: lightblue;">twitter</option>
+				<option style="color: indigo;">Amazon</option>
+				<option style="color: violet;">Daraz</option>
+			</select><br><label style="border: 2px solid;" for="Websites"> use ctrl+click for multi-selection </label></td> 
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"><label for="Address">Address</label></td>
+		<td style="border: 2px solid;"><input  type="textbox" name="Address" id="Address" maxlength="100" onkeyup="count()" style="width: 90%; font-size: 16px;"></td>
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"></td>
+		<td style="border: 2px solid;">Remaining Characters: <label id="display" style="color: red;"></td>
+	</tr>
+
+	<tr>
+		<td style="border: 2px solid;"></td>
+		<td style="border: 2px solid;"><input type="submit" value="Submit"> <input type="reset" value="Reset"></td>
+	</tr>
+
+</table>
+</form>
+</body>
+</html>
+
+<script type="text/javascript">
+	function count(){
+		  var i = document.getElementById("Address").value.length;  
+            document.getElementById("display").innerHTML = 100 - i;  
+	}
+</script>
+
+
+  
