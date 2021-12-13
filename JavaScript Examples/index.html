@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Examples</title>
+<head>
+<meta charset="utf-8"
+
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="FORM">
+	<div class="jumbotron text-center bg-dark text-white">
+  <h1>COMSATS UNIVERSITY ISLAMABAD, ABBOTABAD</h1>
+  <p style="font-size: 30px;">JavaScript Examples</p>
+</div>
+
+<div class="container">
+<h1>Using JavaScript to change the value of the src (source) attribute of an image.</h1>
+
+<button onclick="document.getElementById('myImage').src='200.gif'">Click to set off the alarm</button>
+
+<img id="myImage" src="fire.gif">
+
+<button onclick="document.getElementById('myImage').src='fire.gif'">Click to set off fire</button>
+<br><br><br>
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="Converter(this.value)" onchange="Converter(this.value)">
+</p>
+
+<p>Celcius: <span id="Celcius"></span></p>
+
+<br><br><br>
+<p id="demo"></p>
+
+<br>
+
+<button onclick="document.write('My First Webpage')">Document.write Display</button>
+<br><br><br>
+        <p>Enter first number</p>
+         <input type="text" id="n1"/><br/>
+         <p>Enter Second number</p>
+        <input type="text" id="n2"/><br/><br/>
+        <p></p>
+        <button onclick="calc();">Result = </button><br>
+        <p>Addition</p> 
+        <input type="text" id="result1"/>
+        <p>Subtraction</p>
+        <input type="text" id="result2"/>
+<br><br><br>        
+<button onclick="document.getElementById('first').innerHTML = first ((5+6)*10)">Expression 1</button>
+<p id= "first"></p>
+<button onclick="document.getElementById('second').innerHTML = second ((((22)*2)+5))">Expression 2</button>
+<p id= "second"></p>
+<button onclick="document.getElementById('third').innerHTML = third (6)">Expression 3</button>
+<p id= "third"></p>
+</div>
+
+</body>
+</html>
+<script>
+function myFunction1(p1, p2) {
+  return p1 + p2;   // The function returns the sum of p1 and p2
+}
+
+function myFunction2(p1, p2) {
+  return p1 - p2;   // The function returns the difference of p1 and p2
+}
+</script>
+
+<script>
+alert('My First Webpage');
+</script>
+
+<script>
+        function first(a){ return a ;}
+        function second(b) { return b ;}
+        function third(x){return x %= 5;}
+</script>
+
+<script>
+document.getElementById("demo").innerHTML = ' My First Webpage ';
+</script>
+
+<script> //Temperature Converter
+function Converter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("Celcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+<script>
+function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                //var oper = document.getElementById('operators').value;
+                
+                //if(oper === '+')
+                {
+                    document.getElementById('result1').value = n1+n2;
+                }
+                
+                //if(oper === '-')
+                {
+                    document.getElementById('result2').value = n1-n2;
+                }
+               
+            }
+            
+              </script>
